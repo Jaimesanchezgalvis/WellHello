@@ -1,0 +1,227 @@
+body {
+    background-color: #e6e1e3;
+    font-family: 'Open Sans', sans-serif;
+    transition: 1s;
+}
+
+ body:active {
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    height: 3.5em;
+    background-color: #3C3C3C;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.header--name {
+    color: #FEFEFE;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.header--bi.bi-chevron-left {
+    color: #FEFEFE;
+    margin-left: 1em;
+    position: absolute;
+
+}
+
+.profileBox {
+    width: 18em;
+    margin: 2em auto;
+    transition: 1s;
+}
+
+.profileBox:hover {
+    width: 18.5em;
+    margin: 2em auto;
+}
+
+.profileBox--online {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: #5AEC90;
+    margin-top: 0.5em;
+    margin-left: 12em;
+    box-shadow: 4px 9px 9px -10px black;
+}
+
+.profileBox--online p {
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+
+img.profileBox--picture {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 10px 10px -9px black;
+}
+
+
+.details {
+    width: 18em;
+    margin: 2em auto;
+}
+
+.details--name {
+    display: inline-block;
+    color: #575757;
+    margin: 0;
+}
+
+.details--age {
+    display: inline-block;
+    color: #575757;
+    margin: 0;
+}
+
+.details--city {
+    color: #FB4D87;
+    margin: 0;
+}
+
+.bi.bi-star{
+margin-left: 10em;
+font-size: 1.1em;
+}
+
+.details--description {
+    color: #575757;
+    padding: 0.3em;
+    margin: 0.2em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.addfriend {
+    position: sticky;
+    margin-bottom: 2em;
+    width: 25em;
+    height: 3em;
+    background-color: #3C3C3C;
+    color: #C5C5C5;
+    font-size: 0.7em;
+    border-style: none;
+    transition: 1s;
+    border-radius: 0.3em;
+    box-shadow: 4px 9px 9px -10px black;
+
+}
+
+.addfriend:hover {
+    position: sticky;
+    margin-bottom: 2em;
+    width: 26em;
+    height: 3em;
+    font-size: 0.73em;
+    border-style: none;
+    transition: 1s;
+    box-shadow: 4px 9px 9px -10px black;
+}
+
+.addfriend:active {
+    position: sticky;
+    margin-bottom: 2em;
+    width: 26em;
+    height: 3em;
+    background-color: #5AEC90;
+    color: #3C3C3C;
+    font-size: 0.7em;
+    border-style: none;
+    transition: 1s;
+}
+
+.addfriend:focus {
+    position: sticky;
+    margin-bottom: 2em;
+    width: 26em;
+    height: 3em;
+    background-color: #5AEC90;
+    color: #3C3C3C;
+    font-size: 0.7em;
+    border-style: none;
+    transition: 1s;
+}
+
+.chatPage {
+    display: flex;
+    flex-grow: 2;
+    width: 17em;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.chatPage--box__picture {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    box-shadow: 4px 9px 9px -10px black;
+}
+
+img.chatPage--picture {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 10px 10px -9px black;
+}
+
+.chatPage--box__Chat {
+    margin-top: 2em;
+    background-color: #54BAE2;
+    width: 13.5em;
+    border-radius: 9px 0px 9px 9px;
+    box-shadow: 2px 10px 10px -9px black;
+}
+
+.chatPage--box__Chat p {
+    text-align: justify;
+    color: white;
+    padding: 1em;
+    margin: 0;
+    font-size: 0.6em;
+}
+
+
+
+
+.chatPage--box__pictureUser {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    box-shadow: 4px 9px 9px -10px black;
+}
+
+img.chatPage--pictureUser {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+    box-shadow: 2px 10px 10px -9px black;
+}
+
+.chatPage--box__ChatUser {
+    margin-top: 2em;
+    background-color: #54BAE2;
+    width: 13.5em;
+    border-radius: 0px 9px 9px 9px;
+    box-shadow: 2px 10px 10px -9px black;
+}
