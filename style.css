@@ -165,7 +165,6 @@ footer {
 
 .chatPage {
     display: flex;
-    flex-grow: 2;
     width: 17em;
     margin: 0 auto;
     margin-top: 1em;
@@ -219,9 +218,49 @@ img.chatPage--pictureUser {
 }
 
 .chatPage--box__ChatUser {
-    margin-top: 2em;
+    margin-top: 1.5em;
     background-color: #54BAE2;
     width: 13.5em;
     border-radius: 0px 9px 9px 9px;
     box-shadow: 2px 10px 10px -9px black;
 }
+
+.chatPage--box__ChatUser p {
+    text-align: justify;
+    color: white;
+    padding: 1em;
+    margin: 0;
+    font-size: 0.6em;
+}
+
+input {
+    border: none;
+    color: white;
+}
+
+.textmessages {
+    display: flex;
+    color: #3C3C3C;
+       width: 18em;
+       height: 2.5em;
+       margin: 0 auto;
+       margin-top: 2.5em;
+       border-radius: 5px;
+       box-shadow: 10px 10px 10px -9px black;
+       border: none;
+    }
+
+    .textmessages:active {
+    border: none;
+}
+
+       ::-webkit-input-placeholder {
+        font-size: 0.6em;
+        text-align: start;
+        padding: 0.5em;
+        }
+
+     .textmessages--bi.bi-chevron-right{
+        font-size: 1.5em;
+        margin-top: 1.8em;
+     }

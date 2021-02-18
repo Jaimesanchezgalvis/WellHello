@@ -15,7 +15,7 @@ I have used an additional stylesheet to normalize, the layout in the different b
 
 The units of measurement that I have used are "em", so that the project was responsive, too
 
-I hope I have met expectations, and I am always willing to hear suggestions for improvement,
+I hope I have met expectations, and i would like to have more time to finish the chat, and obviously am always willing to hear suggestions for improvement,
 
 thanks for reading this lines,
 best regards Jaime Sanchez Galvis
