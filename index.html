@@ -19,7 +19,12 @@
     <!-- name profile -->
     <header>
         <i class="header--bi bi-chevron-left"></i>
-        <h3 class="header--name">Sophie</h3>
+        <header class="header--name" href="/index.html">
+          <a class="chat-btn1">
+              <h3>Sophie</h3>
+          </a>
+        </header>
+        
     </header>
     <div class="containerHome">
 
@@ -28,7 +33,7 @@
             <div class="profileBox--online">
                 <p>ONLINE</p>
             </div>
-            <a href="/chatPage.html">
+            <a class="chat-btn2">
                 <img class="profileBox--picture" src="/public/Sophie.png" alt="">
             </a>
         </div>
@@ -46,18 +51,27 @@
         <footer>
             <!-- <input class="addfriend body" type="button" value="ADD AS FRIEND"> -->
             <!-- <div class="addfriend body" type="button">ADD AS FRIEND</div> -->
-            <button class="addfriend body" value="ADD AS FRIEND">ADD AS FRIEND</button>
+            <a onclick="changeColor(body)">
+                <button class="addfriend body" value="ADD AS FRIEND">ADD AS FRIEND</button>
+            </a> 
         </footer>
+
+<!-- <a id="mb" class="boton" onclick="changeColor(body);">enlace</a> -->
+
+
     </div>
 
 
-    <div class="chatpage1">
+    <div class="containerChat">
+
+      
         <!-- name profile -->
-        <header>
+        <!-- <header>
             <a class="header--name" href="/index.html">
                 <h3>Sophie</h3>
             </a>
-        </header>
+        </header> -->
+
         <!-- random chat -->
         <div class="chatPage">
             <!-- message sent -->
@@ -69,7 +83,7 @@
                         eius non, deleniti ducimus optio odio?</p>
                 </div>
                 <div class="chatBox--avatar__send">
-                    <a href="/index.html">
+                    <a class="chat-btn">
                         <img src="/public/Sophie2.png" alt="">
                     </a>
                 </div>
