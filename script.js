@@ -1,4 +1,4 @@
-
+// funcion for chat 
 const popup = document.querySelector('.containerChat');
 const chatBtn = document.querySelector('.chat-btn');
 const chatBtn1 = document.querySelector('.chat-btn1');
@@ -28,7 +28,7 @@ submitBtn.addEventListener('click', () => {
     inputElm.value = '';
 })
 
-
+// function change color
 function changeColor(x) {
     if (x.style.background == "rgb(253, 242, 214)") {
         x.style.background = "#EDEBEC";

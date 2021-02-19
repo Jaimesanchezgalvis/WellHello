@@ -6,14 +6,13 @@ body {
     transition: 1s;
 }
 
-
 a:link,
 a:visited,
 a:active {
     text-decoration: none;
 }
 
-/* header */
+/* name profile */
 header {
     display: flex;
     height: 3.5em;
@@ -29,20 +28,19 @@ header {
     text-decoration: none;
 }
 
-
-
 .header--bi.bi-chevron-left {
     color: #FEFEFE;
     margin-left: 1em;
     position: absolute;
 }
 
-/* main container  */
+/* main container home */
 .containerHome{
     height: 100vh;
     z-index: 50;
 }
 
+/* avatar profile */
 .profileBox {
     width: 18em;
     margin: 2em auto;
@@ -79,6 +77,7 @@ img.profileBox--picture {
     box-shadow: 2px 10px 10px -9px black;
 }
 
+/* details */
 .details {
     width: 18em;
     margin: 2em auto;
@@ -112,6 +111,7 @@ img.profileBox--picture {
     margin: 0.2em;
 }
 
+/* Add as afriend */
 footer {
     display: flex;
     justify-content: center;
@@ -154,7 +154,7 @@ footer {
     transition: 1s;
 }
 
-/* Chat page general settings */
+/* main container chat page */
 .containerChat {
     display: none;
     flex-wrap: wrap;
@@ -171,6 +171,7 @@ footer {
     display: flex;
 }
 
+/* random chat */
 .chatPage {
     overflow-y: auto;
     overflow-x: hidden;
@@ -189,6 +190,7 @@ img {
     box-shadow: 2px 10px 10px -9px black;
 }
 
+/* chat Box for messages */
 .chatBox {
     display: flex;
     width: 80%;
@@ -196,7 +198,6 @@ img {
     padding: 1em;
 }
 
-/* send messages */
 .chatBox--send {
     margin-top: 2em;
     background-color: #54BAE2;
@@ -214,6 +215,7 @@ img {
     font-size: 0.6em;
 }
 
+/* avatar for chat box */
 .chatBox--avatar__send {
     width: 3.5em;
     height: 3.5em;
@@ -222,7 +224,7 @@ img {
 }
 
 
-/* income message  */
+/* chat box for income message  */
 .chatBox--incomemessage {
     margin-top: 1.5em;
     background-color: #ffffff;
@@ -239,6 +241,7 @@ img {
     font-size: 0.6em;
 }
 
+/* avatar for chat box income message */
 .chatBox--avatar__incomemessage {
     width: 3.5em;
     height: 3.5em;
@@ -268,8 +271,7 @@ input[type="text"] {
     height: 2.2rem;
 }
 
-
-
+/* button send message */
 .submit {
     padding: 0.25rem 0.5rem;
     margin-left: 0.5rem;
