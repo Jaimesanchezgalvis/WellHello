@@ -15,33 +15,33 @@
 </head>
 
 <body>
+    <!-- main container home -->
+        <div class="containerHome">
     <!-- name profile -->
     <header>
-        <i class="header--bi bi-chevron-left"></i>
-        <header class="header--name" href="/index.html">
-            <a class="chat-btn1">
+        <i class="header__i bi-chevron-left"></i>
+        <div class="header__name" href="/index.html">
+            <a class="chat-btn3">
                 <h3>Sophie</h3>
             </a>
-        </header>
+        </div>
     </header>
-<!-- main container home -->
-    <div class="containerHome">
         <!-- avatar profile -->
         <div class="profileBox">
-            <div class="profileBox--online">
+            <div class="profileBox__online">
                 <p>ONLINE</p>
             </div>
             <a class="chat-btn2">
-                <img class="profileBox--picture" src="/public/Sophie.png" alt="">
+                <img class="profileBox__picture" src="/public/Sophie.png" alt="">
             </a>
         </div>
         <!-- details  -->
         <div class="details">
-            <p class="details--name">Sofile,</p>
-            <p class="details--age">22</p>
-            <i class="bi bi-star"></i>
-            <p class="details--city">New york </p>
-            <p class="details--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum
+            <p class="details__name">Sofile,</p>
+            <p class="details__age">22</p>
+            <i class="i bi-star"></i>
+            <p class="details__city">New york </p>
+            <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum
                 quibusdam rem animi optio molestiae doloribus! Assumenda alias nemo dolorem suscipit fuga amet, quisquam
                 eius non, deleniti ducimus optio odio?</p>
         </div>
@@ -55,18 +55,26 @@
 
 <!-- main container chat page -->
     <div class="containerChat">
+        <header>
+            <i class="header__i bi-chevron-left"></i>
+            <div class="header__name" href="/index.html">
+                <a class="chat-btn1">
+                    <h3>Sophie</h3>
+                </a>
+            </div>
+        </header>
         <!-- random chat -->
         <div class="chatPage">
             <!-- chat Box for messages -->
             <div class="chatBox">
-                <div class="chatBox--send">
+                <div class="chatBox__send">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum
                         quibusdam rem animi optio molestiae doloribus! Assumenda alias nemo dolorem suscipit fuga amet,
                         quisquam
                         eius non, deleniti ducimus optio odio?</p>
                 </div>
                 <!-- avatar for chat box -->
-                <div class="chatBox--avatar__send">
+                <div class="chatBox__avatar--send">
                     <a class="chat-btn">
                         <img src="/public/Sophie2.png" alt="">
                     </a>
@@ -75,7 +83,7 @@
         </div>
         <!-- Input Area -->
         <div class="inputArea">
-            <input type="text" placeholder=" Write a message...">
+            <input required type="text" placeholder=" Write a message...">
             <button class="submit"><i class="material-icons">send</i></button>
         </div>
     </div>

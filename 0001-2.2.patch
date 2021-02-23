@@ -1,0 +1,348 @@
+From 7f4f88cafc815eb0f04b82b00dc698acf821e1fc Mon Sep 17 00:00:00 2001
+From: jaimesanchezgalvis <jaimesanchezgalvis@gmail.com>
+Date: Fri, 19 Feb 2021 02:15:23 +0100
+Subject: [PATCH 1/1] 2.2
+
+---
+ chatPage.html              | 57 --------------------------------------
+ index.html                 | 36 ++++++------------------
+ jaime_sanchez_galvis.patch |  0
+ readme.txt                 |  8 +++---
+ script.js                  |  4 +--
+ style.css                  | 22 ++++++++-------
+ 6 files changed, 27 insertions(+), 100 deletions(-)
+ delete mode 100644 chatPage.html
+ delete mode 100644 jaime_sanchez_galvis.patch
+
+diff --git a/chatPage.html b/chatPage.html
+deleted file mode 100644
+index 9c3eb40..0000000
+--- a/chatPage.html
++++ /dev/null
+@@ -1,57 +0,0 @@
+-<!-- <!DOCTYPE html>
+-<html lang="en">
+-
+-<head>
+-    <meta charset="UTF-8">
+-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <link rel="stylesheet" href="style.css">
+-    <link rel="stylesheet" href="normalize.css">
+-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+-    <link rel="preconnect" href="https://fonts.gstatic.com">
+-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+-    <title>WellHello</title>
+-</head>
+-
+-<body>
+-<div class="chatpage1">
+-
+-    <!-- name profile -->
+-    <header>
+-        <a class="header--name" href="/index.html">
+-            <h3>Sophie</h3>
+-        </a>
+-    </header>
+-    <!-- random chat -->
+-    <div class="chatPage">
+-        <!-- message sent -->
+-        <div class="chatBox">
+-            <div class="chatBox--send">
+-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum
+-                    quibusdam rem animi optio molestiae doloribus! Assumenda alias nemo dolorem suscipit fuga amet,
+-                    quisquam
+-                    eius non, deleniti ducimus optio odio?</p>
+-            </div>
+-            <div class="chatBox--avatar__send">
+-                <a href="/index.html">
+-                    <img src="/public/Sophie2.png" alt="">
+-                </a>
+-            </div>
+-        </div>
+-    </div>
+-
+-<script src="/local.js">chath</script>
+-
+-        <!-- Input Area -->
+-        <div class="inputArea">
+-            <input type="text" placeholder=" Write a message...">
+-            <button class="submit"><i class="material-icons">send</i></button>
+-
+-        </div>
+-
+-    <script src="/script.js"></script>
+-</div>
+-</body>
+-
+-</html> -->
+\ No newline at end of file
+diff --git a/index.html b/index.html
+index 20e26ff..914ea8f 100644
+--- a/index.html
++++ b/index.html
+@@ -11,7 +11,6 @@
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+-
+     <title>WellHello</title>
+ </head>
+ 
+@@ -20,15 +19,14 @@
+     <header>
+         <i class="header--bi bi-chevron-left"></i>
+         <header class="header--name" href="/index.html">
+-          <a class="chat-btn1">
+-              <h3>Sophie</h3>
+-          </a>
++            <a class="chat-btn1">
++                <h3>Sophie</h3>
++            </a>
+         </header>
+-        
+     </header>
++<!-- main container home -->
+     <div class="containerHome">
+-
+-        <!-- avatar picture -->
++        <!-- avatar profile -->
+         <div class="profileBox">
+             <div class="profileBox--online">
+                 <p>ONLINE</p>
+@@ -49,32 +47,17 @@
+         </div>
+         <!-- Add as afriend -->
+         <footer>
+-            <!-- <input class="addfriend body" type="button" value="ADD AS FRIEND"> -->
+-            <!-- <div class="addfriend body" type="button">ADD AS FRIEND</div> -->
+             <a onclick="changeColor(body)">
+                 <button class="addfriend body" value="ADD AS FRIEND">ADD AS FRIEND</button>
+-            </a> 
++            </a>
+         </footer>
+-
+-<!-- <a id="mb" class="boton" onclick="changeColor(body);">enlace</a> -->
+-
+-
+     </div>
+ 
+-
++<!-- main container chat page -->
+     <div class="containerChat">
+-
+-      
+-        <!-- name profile -->
+-        <!-- <header>
+-            <a class="header--name" href="/index.html">
+-                <h3>Sophie</h3>
+-            </a>
+-        </header> -->
+-
+         <!-- random chat -->
+         <div class="chatPage">
+-            <!-- message sent -->
++            <!-- chat Box for messages -->
+             <div class="chatBox">
+                 <div class="chatBox--send">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum
+@@ -82,6 +65,7 @@
+                         quisquam
+                         eius non, deleniti ducimus optio odio?</p>
+                 </div>
++                <!-- avatar for chat box -->
+                 <div class="chatBox--avatar__send">
+                     <a class="chat-btn">
+                         <img src="/public/Sophie2.png" alt="">
+@@ -96,7 +80,5 @@
+         </div>
+     </div>
+     <script src="/script.js"></script>
+-
+ </body>
+-
+ </html>
+\ No newline at end of file
+diff --git a/jaime_sanchez_galvis.patch b/jaime_sanchez_galvis.patch
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/readme.txt b/readme.txt
+index 13f8fe9..4910ff2 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,12 +1,12 @@
+-Well hello
++Wellhello project
+ 
+ Test based on example submitted page, I have deployed this project in a domain 
+ that I had unused to view the project online.
+ 
+ You can visit the project at http://ciudadcentralbogota.com/
+ 
+-It is made with html5, CSS some boostrap icons and layout with flexBox
+-The methodology that followed for the styles is BEM methodologist.
++It is made with html5, CSS, Some boostrap icons and layout with flexBox
++The methodology that followed for the styles is BEM methodology.
+ 
+ And all the tags follow a chronological and intuitive order so,
+ that the code can be easily read.
+@@ -15,7 +15,7 @@ I have used an additional stylesheet to normalize, the layout in the different b
+ 
+ The units of measurement that I have used are "em", so that the project was responsive, too
+ 
+-I hope I have met expectations, and i would like to have more time to finish the chat, and obviously am always willing to hear suggestions for improvement,
++I have really enjoyed doing this project, and I will be willing to continue improving
+ 
+ thanks for reading this lines,
+ best regards Jaime Sanchez Galvis
+\ No newline at end of file
+diff --git a/script.js b/script.js
+index 5746386..35b056b 100644
+--- a/script.js
++++ b/script.js
+@@ -1,4 +1,4 @@
+-
++// funcion for chat 
+ const popup = document.querySelector('.containerChat');
+ const chatBtn = document.querySelector('.chat-btn');
+ const chatBtn1 = document.querySelector('.chat-btn1');
+@@ -28,7 +28,7 @@ submitBtn.addEventListener('click', () => {
+     inputElm.value = '';
+ })
+ 
+-
++// function change color
+ function changeColor(x) {
+     if (x.style.background == "rgb(253, 242, 214)") {
+         x.style.background = "#EDEBEC";
+diff --git a/style.css b/style.css
+index 73a1efe..c6c1b15 100644
+--- a/style.css
++++ b/style.css
+@@ -6,14 +6,13 @@ body {
+     transition: 1s;
+ }
+ 
+-
+ a:link,
+ a:visited,
+ a:active {
+     text-decoration: none;
+ }
+ 
+-/* header */
++/* name profile */
+ header {
+     display: flex;
+     height: 3.5em;
+@@ -29,20 +28,19 @@ header {
+     text-decoration: none;
+ }
+ 
+-
+-
+ .header--bi.bi-chevron-left {
+     color: #FEFEFE;
+     margin-left: 1em;
+     position: absolute;
+ }
+ 
+-/* main container  */
++/* main container home */
+ .containerHome{
+     height: 100vh;
+     z-index: 50;
+ }
+ 
++/* avatar profile */
+ .profileBox {
+     width: 18em;
+     margin: 2em auto;
+@@ -79,6 +77,7 @@ img.profileBox--picture {
+     box-shadow: 2px 10px 10px -9px black;
+ }
+ 
++/* details */
+ .details {
+     width: 18em;
+     margin: 2em auto;
+@@ -112,6 +111,7 @@ img.profileBox--picture {
+     margin: 0.2em;
+ }
+ 
++/* Add as afriend */
+ footer {
+     display: flex;
+     justify-content: center;
+@@ -154,7 +154,7 @@ footer {
+     transition: 1s;
+ }
+ 
+-/* Chat page general settings */
++/* main container chat page */
+ .containerChat {
+     display: none;
+     flex-wrap: wrap;
+@@ -171,6 +171,7 @@ footer {
+     display: flex;
+ }
+ 
++/* random chat */
+ .chatPage {
+     overflow-y: auto;
+     overflow-x: hidden;
+@@ -189,6 +190,7 @@ img {
+     box-shadow: 2px 10px 10px -9px black;
+ }
+ 
++/* chat Box for messages */
+ .chatBox {
+     display: flex;
+     width: 80%;
+@@ -196,7 +198,6 @@ img {
+     padding: 1em;
+ }
+ 
+-/* send messages */
+ .chatBox--send {
+     margin-top: 2em;
+     background-color: #54BAE2;
+@@ -214,6 +215,7 @@ img {
+     font-size: 0.6em;
+ }
+ 
++/* avatar for chat box */
+ .chatBox--avatar__send {
+     width: 3.5em;
+     height: 3.5em;
+@@ -222,7 +224,7 @@ img {
+ }
+ 
+ 
+-/* income message  */
++/* chat box for income message  */
+ .chatBox--incomemessage {
+     margin-top: 1.5em;
+     background-color: #ffffff;
+@@ -239,6 +241,7 @@ img {
+     font-size: 0.6em;
+ }
+ 
++/* avatar for chat box income message */
+ .chatBox--avatar__incomemessage {
+     width: 3.5em;
+     height: 3.5em;
+@@ -268,8 +271,7 @@ input[type="text"] {
+     height: 2.2rem;
+ }
+ 
+-
+-
++/* button send message */
+ .submit {
+     padding: 0.25rem 0.5rem;
+     margin-left: 0.5rem;
+-- 
+2.29.2.windows.2
+
